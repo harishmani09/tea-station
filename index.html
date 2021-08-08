@@ -14,8 +14,204 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <h1>tea station</h1>
     <!-- YOUR CODE GOES HERE -->
+    <!--Navbar-->
+    <span class="nav-btn" id="nav-btn">
+      <i class="fas fa-bars"></i>
+    </span>
+    <nav class="navbar" id="navbar">
+      <div class="navbar-header">
+        <span class="nav-close" id="nav-close">
+          <i class="fas fa-times"></i>
+        </span>
+      </div>
+      <ul class="nav-items">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="products.html" class="nav-link">Products</a></li>
+      </ul>
+    </nav>
+    <!-- Header -->
+    <header class="header">
+      <div class="banner">
+        <h2>Over one hundred flavor of</h2>
+        <h1>Specially <br />Crafted Tea</h1>
+        <a href="#" class="btn banner-btn">Explore</a>
+      </div>
+    </header>
+
+    <!--End of Header-->
+
+    <!-- about -->
+
+    <!--End of about -->
+
+    <!--start of product section -->
+
+    <!--end of product section -->
+    <!--start of services section -->
+    <section class="services">
+      <div class="section-title services-title">
+        <h3 class="h3">explore</h3>
+        <h2 class="h2">our services</h2>
+      </div>
+      <div class="section-center clearfix">
+        <article class="service-card">
+          <div class="service-image-container">
+            <img
+              src="./images/product-1.jpeg"
+              class="service-img"
+              alt="single service"
+            />
+            <span class="service-icon">
+              <i class="fas fa-mortar-pestle fa-fw"></i>
+            </span>
+          </div>
+
+          <div class="service-info">
+            <h4>custom receipies</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aut
+              animi placeat quae pariatur autem.
+            </p>
+            <a href="products.html" class="btn service-btn">Read More</a>
+          </div>
+        </article>
+        <article class="service-card">
+          <div class="service-image-container">
+            <img
+              src="./images/product-2.jpeg"
+              class="service-img"
+              alt="home delivery"
+            />
+            <span class="service-icon">
+              <i class="fas fa-home fa-fw"></i>
+            </span>
+          </div>
+
+          <div class="service-info">
+            <h4>custom receipies</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aut
+              animi placeat quae pariatur autem.
+            </p>
+            <a href="products.html" class="btn service-btn">Read More</a>
+          </div>
+        </article>
+        <article class="service-card">
+          <div class="service-image-container">
+            <img
+              src="./images/product-3.jpeg"
+              class="service-img"
+              alt="single service"
+            />
+            <span class="service-icon">
+              <i class="fas fa-mug-hot fa-fw"></i>
+            </span>
+          </div>
+
+          <div class="service-info">
+            <h4>tea ageing</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aut
+              animi placeat quae pariatur autem.
+            </p>
+            <a href="products.html" class="btn service-btn">Read More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!--end of services section -->
+
+    <!--start of contact form section -->
+    <section class="contact">
+      <div class="section-center clearfix">
+        <!-- contact info-->
+        <article class="contact-info">
+          <div class="contact-item">
+            <h4 class="contact-title">
+              <span class="contact-icon">
+                <i class="fa fa-location-arrow"></i>
+              </span>
+              address
+            </h4>
+            <h4 class="contact-text">
+              123, Sapphire, Kadivali <br />
+              Mumbai, Mahatrastra-400101
+            </h4>
+          </div>
+          <!--end of contact info-->
+          <div class="contact-item">
+            <h4 class="contact-title">
+              <span class="contact-icon">
+                <i class="fa fa-phone"></i>
+              </span>
+              +91 995679765
+            </h4>
+          </div>
+          <div class="contact-item">
+            <h4 class="contact-title">
+              <span class="contact-icon">
+                <i class="fa fa-envelope"></i>
+              </span>
+              Email
+            </h4>
+            <h4 class="contact-text">email@email.com</h4>
+          </div>
+        </article>
+        <!-- contact info-->
+        <article class="contact-form">
+          <h3>contact us</h3>
+          <form action="https://formspree.io/f/xbjqzbpo" method="POST">
+            <div class="form-group">
+              <input
+                type="text"
+                placeholder="name"
+                class="form-control"
+                name="name"
+              />
+              <input
+                type="email"
+                placeholder="email"
+                class="form-control"
+                name="email"
+              />
+              <textarea
+                class="form-control"
+                placeholder="message"
+                name="message"
+                rows="5"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn submit-btn">Submit Here</button>
+          </form>
+        </article>
+      </div>
+    </section>
+    <!--end of form section -->
+    <!--start of footer section -->
+    <footer class="footer">
+      <div class="section-center">
+        <div class="social-icon">
+          <a href="https://twitter.com">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="www.facebook.com">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="www.instagram.com">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <h4 class="footer-text">
+          &copy;<span id="date"> </span>
+          <span class="company">tea station</span>
+          all rights reserved
+        </h4>
+      </div>
+    </footer>
+    <!--end of footer section -->
     <script src="app.js"></script>
   </body>
 </html>
